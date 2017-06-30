@@ -1,0 +1,421 @@
+<html xmlns="http://www.w3.org/1999/xhtml" class="full">
+
+<title>
+    Betfred Online Betting, Casino, Games, Poker and Bingo
+</title>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+<link rel="stylesheet" href="css/lotto_media.css">
+<link rel="stylesheet" href="css/lotto.css">
+
+    <style>
+        .page-loading {
+            background: url('http://www.betfred.com/img/light-overlay.png') repeat;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 999;
+            display: none;
+        }
+        
+        .page-loading img {
+            margin-top: 15%;
+        }
+        
+        .page-loading .message {
+            display: none;
+            margin-top: 15%;
+            font-size: 1.8em;
+            font-weight: bold;
+        }
+
+        footer{
+position:absolute;
+bottom:0;
+}
+
+@media(max-width:992px){
+.select-border{ DISPLAY: NONE;}
+#feedbackSubmit{DISPLAY:NONE;}
+.feedback{display:none !important;}
+    .full { background:none; background-color:#001b38;}
+    img.padmin{width:100%; padding: 0 30px 0 30px;}
+    .select-border{ height: 180px; width:100%; padding: 0 !important; position: relative; top: 0px;overflow:hidden;}
+    .select-border img{ position:absolute; top:-205px; width:230px; }
+}
+@media(max-width:767px){
+    .select-border{ DISPLAY: NONE;}
+    #feedbackSubmit{DISPLAY:NONE;}
+    .select-border img{  position:absolute; top: -165px; width:180px; }
+    #ballsdrop img { width:18px; left:112px;}
+    #ballsdrop2 img { width:18px; left:172px;}
+    #ballsdrop3 img { width:18px; left:222px;}
+    
+}
+    </style>
+
+</head>
+    <body cz-shortcut-listen="true">
+
+
+    <div class="pagebg">
+        <div id="page">
+            
+
+            <div id="header" style="display:none;">
+                <div id="actions">
+                    <div id="BetFredContent_ctl01_LogoutControls" style="display: block;"><div class="button"><a id="Logout" href="/logout.aspx">Log Out</a></div><div class="button green"><a href="https://www.betfred.com/account">My Account</a></div></div>
+                </div>
+
+                <div id="balancemsg" class="balancemsg" style="display: block;">
+                    
+                    <ul>
+                        <li>
+                            <span id="nameHeader">Dan Hughes (PF522162)</span>
+                        </li>
+                        <li>
+                            Cash: 
+                            <span id="cashBalanceHeader">£3234507.67</span> | Chips: <span id="chipsBalanceHeader"><a href="" id="getChipsHeader">View Balance</a>
+                            </span> | Free: <span id="freeBalanceHeader">£1.00</span>
+                        </li>
+                    </ul>                </div>
+            </div>
+
+
+ 
+
+                <br class="clear" />
+
+                    <form id="selection" action="" style="display:none;">
+                      selection 1:<br>
+                      <input id="one" type="text" name="one" value="">
+                      <br><br>
+                      
+                      selection 2:<br>
+                      <input id="two" type="text" name="two" value="">
+                      <br><br>
+                      selection 3:<br>
+                      <input id="three" type="text" name="three" value="">
+                      <br><br>
+                      <div style="width: 90px;margin: 0 auto;">
+                         <div class="button big green">
+                                <a href="#" class="optinv3" data-enabled="1" data-promo-id="4" data-device-id="1">Opt in</a>
+                        </div>   
+                        <div>
+                    </form>   
+                </div> 
+
+    </div>
+
+    <section class="container">
+
+        <div class="row">
+        
+            <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-5 col-md-offset-2">
+                <img class="img-responsive logo padmin pad " src="image/main_assets/betfred logo.png" alt=""  />
+                <img class="img-responsive padmin pad" src="image/main_assets/title.png" width="596px" alt=""  />
+                <img class="img-responsive padmin pad" src="image/main_assets/steps.png" alt=""  />
+            </div>
+        
+            <div class="col-sm-12 col-md-3 col-lg-3 ">
+            
+                <div class="selection select-border">
+                    
+                        <div class="balldown" id="ballsdrop">
+                            <img id="ball-1" class="ball1" src="image/selected/balls_01.png" alt="" width="70px"/>
+                            <img id="ball-2" class="ball2" src="image/selected/balls_02.png" alt="" width="70px"/>
+                            <img id="ball-3" class="ball3" src="image/selected/balls_03.png" alt="" width="70px"/>
+                            <img id="ball-4" class="ball4" src="image/selected/balls_04.png" alt="" width="70px"/>
+                            <img id="ball-5" class="ball5" src="image/selected/balls_05.png" alt="" width="70px"/>
+                            <img id="ball-6" class="ball6" src="image/selected/balls_06.png" alt="" width="70px"/>
+                            <img id="ball-7" class="ball7" src="image/selected/balls_07.png" alt="" width="70px"/>
+                            <img id="ball-8" class="ball8" src="image/selected/balls_08.png" alt="" width="70px"/>
+                            <img id="ball-9" class="ball9" src="image/selected/balls_09.png" alt="" width="70px"/>
+                            <img id="ball-10" class="ball10" src="image/selected/balls_10.png" alt="" width="70px"/>
+                            <img id="ball-11" class="ball11" src="image/selected/balls_11.png" alt="" width="70px"/>
+                            <img id="ball-12" class="ball12" src="image/selected/balls_12.png" alt="" width="70px"/>
+                            <img id="ball-13" class="ball13" src="image/selected/balls_13.png" alt="" width="70px"/>
+                            <img id="ball-14" class="ball14" src="image/selected/balls_14.png" alt="" width="70px"/>
+                            <img id="ball-15" class="ball15" src="image/selected/balls_15.png" alt="" width="70px"/>
+                            <img id="ball-16" class="ball16" src="image/selected/balls_16.png" alt="" width="70px"/>
+                            <img id="ball-17" class="ball17" src="image/selected/balls_17.png" alt="" width="70px"/>
+                            <img id="ball-18" class="ball18" src="image/selected/balls_18.png" alt="" width="70px"/>
+                            <img id="ball-19" class="ball19" src="image/selected/balls_19.png" alt="" width="70px"/>
+                            <img id="ball-20" class="ball20" src="image/selected/balls_20.png" alt="" width="70px"/>
+                            <img id="ball-21" class="ball21" src="image/selected/balls_21.png" alt="" width="70px"/>
+                            <img id="ball-22" class="ball22" src="image/selected/balls_22.png" alt="" width="70px"/>
+                            <img id="ball-23" class="ball23" src="image/selected/balls_23.png" alt="" width="70px"/>
+                            <img id="ball-24" class="ball24" src="image/selected/balls_24.png" alt="" width="70px"/>
+                            <img id="ball-25" class="ball25" src="image/selected/balls_25.png" alt="" width="70px"/>
+                            <img id="ball-26" class="ball26" src="image/selected/balls_26.png" alt="" width="70px"/>
+                            <img id="ball-27" class="ball27" src="image/selected/balls_27.png" alt="" width="70px"/>
+                            <img id="ball-28" class="ball28" src="image/selected/balls_28.png" alt="" width="70px"/>
+                            <img id="ball-29" class="ball29" src="image/selected/balls_29.png" alt="" width="70px"/>
+                            <img id="ball-30" class="ball30" src="image/selected/balls_30.png" alt="" width="70px"/>
+                            <img id="ball-31" class="ball31" src="image/selected/balls_31.png" alt="" width="70px"/>
+                            <img id="ball-32" class="ball32" src="image/selected/balls_32.png" alt="" width="70px"/>
+                            <img id="ball-33" class="ball33" src="image/selected/balls_33.png" alt="" width="70px"/>
+                            <img id="ball-34" class="ball34" src="image/selected/balls_34.png" alt="" width="70px"/>
+                            <img id="ball-35" class="ball35" src="image/selected/balls_35.png" alt="" width="70px"/>
+                            <img id="ball-36" class="ball36" src="image/selected/balls_36.png" alt="" width="70px"/>
+                            <img id="ball-37" class="ball37" src="image/selected/balls_37.png" alt="" width="70px"/>
+                            <img id="ball-38" class="ball38" src="image/selected/balls_38.png" alt="" width="70px"/>
+                            <img id="ball-39" class="ball39" src="image/selected/balls_39.png" alt="" width="70px"/>
+                            <img id="ball-40" class="ball40" src="image/selected/balls_40.png" alt="" width="70px"/>
+                            <img id="ball-41" class="ball41" src="image/selected/balls_41.png" alt="" width="70px"/>
+                            <img id="ball-42" class="ball42" src="image/selected/balls_42.png" alt="" width="70px"/>
+                            <img id="ball-43" class="ball43" src="image/selected/balls_43.png" alt="" width="70px"/>
+                            <img id="ball-44" class="ball44" src="image/selected/balls_44.png" alt="" width="70px"/>
+                            <img id="ball-45" class="ball45" src="image/selected/balls_45.png" alt="" width="70px"/>
+                            
+                        </div>
+                        
+                        <div class="balldown" id="ballsdrop2">
+                            <img id="ball-1" class="ball1" src="image/selected/balls_01.png" alt="" width="70px"/>
+                            <img id="ball-2" class="ball2" src="image/selected/balls_02.png" alt="" width="70px"/>
+                            <img id="ball-3" class="ball3" src="image/selected/balls_03.png" alt="" width="70px"/>
+                            <img id="ball-4" class="ball4" src="image/selected/balls_04.png" alt="" width="70px"/>
+                            <img id="ball-5" class="ball5" src="image/selected/balls_05.png" alt="" width="70px"/>
+                            <img id="ball-6" class="ball6" src="image/selected/balls_06.png" alt="" width="70px"/>
+                            <img id="ball-7" class="ball7" src="image/selected/balls_07.png" alt="" width="70px"/>
+                            <img id="ball-8" class="ball8" src="image/selected/balls_08.png" alt="" width="70px"/>
+                            <img id="ball-9" class="ball9" src="image/selected/balls_09.png" alt="" width="70px"/>
+                            <img id="ball-10" class="ball10" src="image/selected/balls_10.png" alt="" width="70px"/>
+                            <img id="ball-11" class="ball11" src="image/selected/balls_11.png" alt="" width="70px"/>
+                            <img id="ball-12" class="ball12" src="image/selected/balls_12.png" alt="" width="70px"/>
+                            <img id="ball-13" class="ball13" src="image/selected/balls_13.png" alt="" width="70px"/>
+                            <img id="ball-14" class="ball14" src="image/selected/balls_14.png" alt="" width="70px"/>
+                            <img id="ball-15" class="ball15" src="image/selected/balls_15.png" alt="" width="70px"/>
+                            <img id="ball-16" class="ball16" src="image/selected/balls_16.png" alt="" width="70px"/>
+                            <img id="ball-17" class="ball17" src="image/selected/balls_17.png" alt="" width="70px"/>
+                            <img id="ball-18" class="ball18" src="image/selected/balls_18.png" alt="" width="70px"/>
+                            <img id="ball-19" class="ball19" src="image/selected/balls_19.png" alt="" width="70px"/>
+                            <img id="ball-20" class="ball20" src="image/selected/balls_20.png" alt="" width="70px"/>
+                            <img id="ball-21" class="ball21" src="image/selected/balls_21.png" alt="" width="70px"/>
+                            <img id="ball-22" class="ball22" src="image/selected/balls_22.png" alt="" width="70px"/>
+                            <img id="ball-23" class="ball23" src="image/selected/balls_23.png" alt="" width="70px"/>
+                            <img id="ball-24" class="ball24" src="image/selected/balls_24.png" alt="" width="70px"/>
+                            <img id="ball-25" class="ball25" src="image/selected/balls_25.png" alt="" width="70px"/>
+                            <img id="ball-26" class="ball26" src="image/selected/balls_26.png" alt="" width="70px"/>
+                            <img id="ball-27" class="ball27" src="image/selected/balls_27.png" alt="" width="70px"/>
+                            <img id="ball-28" class="ball28" src="image/selected/balls_28.png" alt="" width="70px"/>
+                            <img id="ball-29" class="ball29" src="image/selected/balls_29.png" alt="" width="70px"/>
+                            <img id="ball-30" class="ball30" src="image/selected/balls_30.png" alt="" width="70px"/>
+                            <img id="ball-31" class="ball31" src="image/selected/balls_31.png" alt="" width="70px"/>
+                            <img id="ball-32" class="ball32" src="image/selected/balls_32.png" alt="" width="70px"/>
+                            <img id="ball-33" class="ball33" src="image/selected/balls_33.png" alt="" width="70px"/>
+                            <img id="ball-34" class="ball34" src="image/selected/balls_34.png" alt="" width="70px"/>
+                            <img id="ball-35" class="ball35" src="image/selected/balls_35.png" alt="" width="70px"/>
+                            <img id="ball-36" class="ball36" src="image/selected/balls_36.png" alt="" width="70px"/>
+                            <img id="ball-37" class="ball37" src="image/selected/balls_37.png" alt="" width="70px"/>
+                            <img id="ball-38" class="ball38" src="image/selected/balls_38.png" alt="" width="70px"/>
+                            <img id="ball-39" class="ball39" src="image/selected/balls_39.png" alt="" width="70px"/>
+                            <img id="ball-40" class="ball40" src="image/selected/balls_40.png" alt="" width="70px"/>
+                            <img id="ball-41" class="ball41" src="image/selected/balls_41.png" alt="" width="70px"/>
+                            <img id="ball-42" class="ball42" src="image/selected/balls_42.png" alt="" width="70px"/>
+                            <img id="ball-43" class="ball43" src="image/selected/balls_43.png" alt="" width="70px"/>
+                            <img id="ball-44" class="ball44" src="image/selected/balls_44.png" alt="" width="70px"/>
+                            <img id="ball-45" class="ball45" src="image/selected/balls_45.png" alt="" width="70px"/>
+                        </div>
+                        <div class="balldown" id="ballsdrop3">
+                            <img id="ball-1" class="ball1" src="image/selected/balls_01.png" alt="" width="70px"/>
+                            <img id="ball-2" class="ball2" src="image/selected/balls_02.png" alt="" width="70px"/>
+                            <img id="ball-3" class="ball3" src="image/selected/balls_03.png" alt="" width="70px"/>
+                            <img id="ball-4" class="ball4" src="image/selected/balls_04.png" alt="" width="70px"/>
+                            <img id="ball-5" class="ball5" src="image/selected/balls_05.png" alt="" width="70px"/>
+                            <img id="ball-6" class="ball6" src="image/selected/balls_06.png" alt="" width="70px"/>
+                            <img id="ball-7" class="ball7" src="image/selected/balls_07.png" alt="" width="70px"/>
+                            <img id="ball-8" class="ball8" src="image/selected/balls_08.png" alt="" width="70px"/>
+                            <img id="ball-9" class="ball9" src="image/selected/balls_09.png" alt="" width="70px"/>
+                            <img id="ball-10" class="ball10" src="image/selected/balls_10.png" alt="" width="70px"/>
+                            <img id="ball-11" class="ball11" src="image/selected/balls_11.png" alt="" width="70px"/>
+                            <img id="ball-12" class="ball12" src="image/selected/balls_12.png" alt="" width="70px"/>
+                            <img id="ball-13" class="ball13" src="image/selected/balls_13.png" alt="" width="70px"/>
+                            <img id="ball-14" class="ball14" src="image/selected/balls_14.png" alt="" width="70px"/>
+                            <img id="ball-15" class="ball15" src="image/selected/balls_15.png" alt="" width="70px"/>
+                            <img id="ball-16" class="ball16" src="image/selected/balls_16.png" alt="" width="70px"/>
+                            <img id="ball-17" class="ball17" src="image/selected/balls_17.png" alt="" width="70px"/>
+                            <img id="ball-18" class="ball18" src="image/selected/balls_18.png" alt="" width="70px"/>
+                            <img id="ball-19" class="ball19" src="image/selected/balls_19.png" alt="" width="70px"/>
+                            <img id="ball-20" class="ball20" src="image/selected/balls_20.png" alt="" width="70px"/>
+                            <img id="ball-21" class="ball21" src="image/selected/balls_21.png" alt="" width="70px"/>
+                            <img id="ball-22" class="ball22" src="image/selected/balls_22.png" alt="" width="70px"/>
+                            <img id="ball-23" class="ball23" src="image/selected/balls_23.png" alt="" width="70px"/>
+                            <img id="ball-24" class="ball24" src="image/selected/balls_24.png" alt="" width="70px"/>
+                            <img id="ball-25" class="ball25" src="image/selected/balls_25.png" alt="" width="70px"/>
+                            <img id="ball-26" class="ball26" src="image/selected/balls_26.png" alt="" width="70px"/>
+                            <img id="ball-27" class="ball27" src="image/selected/balls_27.png" alt="" width="70px"/>
+                            <img id="ball-28" class="ball28" src="image/selected/balls_28.png" alt="" width="70px"/>
+                            <img id="ball-29" class="ball29" src="image/selected/balls_29.png" alt="" width="70px"/>
+                            <img id="ball-30" class="ball30" src="image/selected/balls_30.png" alt="" width="70px"/>
+                            <img id="ball-31" class="ball31" src="image/selected/balls_31.png" alt="" width="70px"/>
+                            <img id="ball-32" class="ball32" src="image/selected/balls_32.png" alt="" width="70px"/>
+                            <img id="ball-33" class="ball33" src="image/selected/balls_33.png" alt="" width="70px"/>
+                            <img id="ball-34" class="ball34" src="image/selected/balls_34.png" alt="" width="70px"/>
+                            <img id="ball-35" class="ball35" src="image/selected/balls_35.png" alt="" width="70px"/>
+                            <img id="ball-36" class="ball36" src="image/selected/balls_36.png" alt="" width="70px"/>
+                            <img id="ball-37" class="ball37" src="image/selected/balls_37.png" alt="" width="70px"/>
+                            <img id="ball-38" class="ball38" src="image/selected/balls_38.png" alt="" width="70px"/>
+                            <img id="ball-39" class="ball39" src="image/selected/balls_39.png" alt="" width="70px"/>
+                            <img id="ball-40" class="ball40" src="image/selected/balls_40.png" alt="" width="70px"/>
+                            <img id="ball-41" class="ball41" src="image/selected/balls_41.png" alt="" width="70px"/>
+                            <img id="ball-42" class="ball42" src="image/selected/balls_42.png" alt="" width="70px"/>
+                            <img id="ball-43" class="ball43" src="image/selected/balls_43.png" alt="" width="70px"/>
+                            <img id="ball-44" class="ball44" src="image/selected/balls_44.png" alt="" width="70px"/>
+                            <img id="ball-45" class="ball45" src="image/selected/balls_45.png" alt="" width="70px"/>
+                        </div>
+                        
+                        <img class="img-responsive your-selection" src="image/main_assets/your-selection.png" alt=""  /> 
+                
+                </div>
+                
+            </div>
+        
+            <div class="col-md-2 col-md-0"></div>
+        </div>
+                
+        
+        <div class="container-fluid" id="board">
+        
+        <!-- Modal -->
+<div id="myModal" class="modal fade" role="dialog" data-backdrop="static" data-keyboard="false">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        
+        <h4 class="modal-title">Betfred Loyalty Draw</h4>
+        
+      </div>
+      <div class="modal-body">
+        <h4><span id="showBalls"></span></h4>
+        <p>Thank you for taking part in the Betfred Loyalty Draw, please Submit your entry or Cancel to go again.</p>
+      </div>
+      <div class="modal-footer">
+        <button onclick="javascript:window.location.reload()" type="button" class="btn btn-danger">Cancel</button>
+        <button type="button" class="btn btn-success"> <a href="#" class="optinv3" data-enabled="1" data-promo-id="4" data-device-id="1">Opt in</a></button>
+      </div>
+    </div>
+
+  </div>
+</div>
+            
+                <div class="row">
+
+                    
+                    
+                    <div class="col-lg-6 col-lg-offset-2 col-md-6 col-md-offset-2 col-xs-12 col-sm-10 col-sm-offset-1 balls " >
+                    
+                        <ul class="lotto-grid">
+                            <!-- Balls 1 - 45 -->
+                            <li><img id="ball-1" class="ball1 1st-click clicked" src="image/grid/balls_01.png" alt="ball 1" /></li>
+                            <li><img id="ball-2" class="ball2 1st-click clicked" src="image/grid/balls_02.png" alt="ball 1" /></li>
+                            <li><img id="ball-3" class="ball3 1st-click clicked" src="image/grid/balls_03.png" alt="ball 1" /></li>
+                            <li><img id="ball-4" class="ball4 1st-click clicked" src="image/grid/balls_04.png" alt="ball 1" /></li>
+                            <li><img id="ball-5" class="ball5 1st-click clicked" src="image/grid/balls_05.png" alt="ball 1" /></li>
+                            <li><img id="ball-6" class="ball6 1st-click clicked" src="image/grid/balls_06.png" alt="ball 1" /></li>
+                            <li><img id="ball-7" class="ball7 1st-click clicked" src="image/grid/balls_07.png" alt="ball 1" /></li>
+                            <li><img id="ball-8" class="ball8 1st-click clicked" src="image/grid/balls_08.png" alt="ball 1" /></li>
+                            <li><img id="ball-9" class="ball9 1st-click clicked" src="image/grid/balls_09.png" alt="ball 1" /></li>
+                            <li><img id="ball-10" class="ball10 1st-click clicked" src="image/grid/balls_10.png" alt="ball 1" /></li>
+                            <li><img id="ball-11" class="ball11 1st-click clicked" src="image/grid/balls_11.png" alt="ball 1" /></li>
+                            <li><img id="ball-12" class="ball12 1st-click clicked" src="image/grid/balls_12.png" alt="ball 1" /></li>
+                            <li><img id="ball-13" class="ball13 1st-click clicked" src="image/grid/balls_13.png" alt="ball 1" /></li>
+                            <li><img id="ball-14" class="ball14 1st-click clicked" src="image/grid/balls_14.png" alt="ball 1" /></li>
+                            <li><img id="ball-15" class="ball15 1st-click clicked" src="image/grid/balls_15.png" alt="ball 1" /></li>
+                            <li><img id="ball-16" class="ball16 1st-click clicked" src="image/grid/balls_16.png" alt="ball 1" /></li>
+                            <li><img id="ball-17" class="ball17 1st-click clicked" src="image/grid/balls_17.png" alt="ball 1" /></li>
+                            <li><img id="ball-18" class="ball18 1st-click clicked" src="image/grid/balls_18.png" alt="ball 1" /></li>
+                            <li><img id="ball-19" class="ball19 1st-click clicked" src="image/grid/balls_19.png" alt="ball 1" /></li>
+                            <li><img id="ball-20" class="ball20 1st-click clicked" src="image/grid/balls_20.png" alt="ball 1" /></li>
+                            <li><img id="ball-21" class="ball21 1st-click clicked" src="image/grid/balls_21.png" alt="ball 1" /></li>
+                            <li><img id="ball-22" class="ball22 1st-click clicked" src="image/grid/balls_22.png" alt="ball 1" /></li>
+                            <li><img id="ball-23" class="ball23 1st-click clicked" src="image/grid/balls_23.png" alt="ball 1" /></li>
+                            <li><img id="ball-24" class="ball24 1st-click clicked" src="image/grid/balls_24.png" alt="ball 1" /></li>
+                            <li><img id="ball-25" class="ball25 1st-click clicked" src="image/grid/balls_25.png" alt="ball 1" /></li>
+                            <li><img id="ball-26" class="ball26 1st-click clicked" src="image/grid/balls_26.png" alt="ball 1" /></li>
+                            <li><img id="ball-27" class="ball27 1st-click clicked" src="image/grid/balls_27.png" alt="ball 1" /></li>
+                            <li><img id="ball-28" class="ball28 1st-click clicked" src="image/grid/balls_28.png" alt="ball 1" /></li>
+                            <li><img id="ball-29" class="ball29 1st-click clicked" src="image/grid/balls_29.png" alt="ball 1" /></li>
+                            <li><img id="ball-30" class="ball30 1st-click clicked" src="image/grid/balls_30.png" alt="ball 1" /></li>
+                            <li><img id="ball-31" class="ball31 1st-click clicked" src="image/grid/balls_31.png" alt="ball 1" /></li>
+                            <li><img id="ball-32" class="ball32 1st-click clicked" src="image/grid/balls_32.png" alt="ball 1" /></li>
+                            <li><img id="ball-33" class="ball33 1st-click clicked" src="image/grid/balls_33.png" alt="ball 1" /></li>
+                            <li><img id="ball-34" class="ball34 1st-click clicked" src="image/grid/balls_34.png" alt="ball 1" /></li>
+                            <li><img id="ball-35" class="ball35 1st-click clicked" src="image/grid/balls_35.png" alt="ball 1" /></li>
+                            <li><img id="ball-36" class="ball36 1st-click clicked" src="image/grid/balls_36.png" alt="ball 1" /></li>
+                            <li><img id="ball-37" class="ball37 1st-click clicked"  src="image/grid/balls_37.png" alt="ball 1" /></li>
+                            <li><img id="ball-38" class="ball38 1st-click clicked" src="image/grid/balls_38.png" alt="ball 1" /></li>
+                            <li><img id="ball-39" class="ball39 1st-click clicked" src="image/grid/balls_39.png" alt="ball 1" /></li>
+                            <li><img id="ball-40" class="ball40 1st-click clicked" src="image/grid/balls_40.png" alt="ball 1" /></li>
+                            <li><img id="ball-41" class="ball41 1st-click clicked" src="image/grid/balls_41.png" alt="ball 1" /></li>
+                            <li><img id="ball-42" class="ball42 1st-click clicked" src="image/grid/balls_42.png" alt="ball 1" /></li>
+                            <li><img id="ball-43" class="ball43 1st-click clicked"src="image/grid/balls_43.png" alt="ball 1" /></li>
+                            <li><img id="ball-44" class="ball44 1st-click clicked" src="image/grid/balls_44.png" alt="ball 1" /></li>
+                            <li><img id="ball-45" class="ball45 1st-click clicked" src="image/grid/balls_45.png" alt="ball 1" /></li>
+                        </ul>
+                    </div>
+                    
+                    
+                    <div class="col-xs-12 col-sm-10 col-md-2 feedback">
+                        <h5 style="margin-bottom:4px;"><em>Feedback</em></h5>
+                        <h5 style="  margin-bottom: -18px;margin-left: 20px;color: grey;">Please fill in:</h5>
+                        
+                            <form action="#" method="POST">
+                            
+                            <input ng-model="name" type="text" name="name" placeholder="Name:" required></input><br />
+                            
+                            <textarea type="text" name="msg" placeholder="Feedback:" required></textarea></br>
+                            <button id="feedbackSubmit" type="Submit" value="Send" class="btn btn-lg btn-success pull-right">Submit</button>
+                            </form>
+                            
+                        
+                    </div>
+                    
+                </div>
+                
+                
+                
+                <footer>
+                <div class="container">
+                    <div class="footer">
+                        <p style="text-align:center;"><a style="color:#fff;" href="">Terms &amp; conditions</a></p>
+                            <img class="img-responsive" src="image/main_assets/payment.png" alt=""  />
+                    </div>  
+                
+                    
+                        <p style="text-align:center;">Petfre (Gibraltar) Limited, trading as Betfred, is licensed by the Government of Gibraltar, licence numbers 036 & 038. Copyright © 2014 Petfre (Gibraltar) Ltd. All Rights Reserved. Account holders must be 18 or over.</p>
+                </div>
+                </footer>
+                
+            
+            
+                
+                
+            
+        
+        
+        
+
+        
+        
+        </div>
+
+
+
+        
+    </section>  
+
+
+        <!--<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+        <script src="http://code.jquery.com/ui/1.11.3/jquery-ui.min.js"></script>
+        <script type="text/javascript" src="//cdn.betfred.com/js/LocalStorage.js"></script>
+        <script type="text/javascript" src="js/lotto.js"></script>
+        <script type="text/javascript" src="js/optinv3.js"></script>
+</body>
+</html>

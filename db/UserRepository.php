@@ -16,13 +16,16 @@ class UserRepository {
         $promoId = $args['promoId'];
         $pfNum = $args['pfNumber'];
         $deviceId = $args['deviceId'];
+        $selectOne = $args['selectOne'];
+        $selectTwo = $args['selectTwo'];
+        $selectThree = $args['selectThree'];
 
         if ($this->isPfNumValid($pfNum)) {
             if ($this->isDateWithinRange($promoId)) {
                 if (!$this->hasUserOptedin($pfNum, $promoId)) {
                     $this->db->query(
-                        "INSERT INTO " . $this->optedInUsersTable . " (promotions_id, pf_number, device_id) VALUES ('%s', '%s', '%s')",
-                        array($promoId, $pfNum, $deviceId)
+                        "INSERT INTO " . $this->optedInUsersTable . " (promotions_id, pf_number, device_id, selection_one, selection_two, selection_three) VALUES ('%s', '%s', '%s', '%s', '%s', '%s')",
+                        array($promoId, $pfNum, $deviceId, $selectOne, $selectTwo, $selectThree)
                     );
                     
                     $result = array('message' => 'Thank you for opting in.<br/> Good Luck!');

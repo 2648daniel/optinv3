@@ -1,0 +1,100 @@
+@media(min-width:992px){
+#ballsdrop img{
+left:23px;
+}
+#ballsdrop2 img{
+left: 86;
+}
+
+#ballsdrop3 img{
+left: 148;
+}
+
+.balls{
+padding: 0;
+}
+
+}
+@media(min-width:1200px){
+#ballsdrop img{
+  left:28px;
+}
+
+#ballsdrop2 img{
+  left:104px;
+}
+
+
+#ballsdrop3 img {
+  left: 179px;
+}
+
+
+}
+
+@media(max-width:992px){
+ #board {
+padding-top:20px;
+}
+
+
+
+
+#board ul {
+  padding: 0px 0 0 15px !important;
+}
+}
+
+
+
+
+  
+  @media(min-width:992px){
+.selection{
+  position: absolute;
+  top: -160px;
+}
+
+img.your-selection{
+width:228px;
+}
+
+.balls{
+padding:0;
+}
+
+}
+
+@media(min-width:1200px){
+.selection{
+position:absolute;
+top: -195px;;
+}
+
+img.your-selection{
+width:275px;
+}
+
+
+
+}
+
+@media(max-width:1200px){
+ #board {
+  padding-top: 20px;
+}
+
+.feedback img{
+width:175px;
+}
+
+
+  form{ 
+  width: 157px !important;
+  }
+  form > textarea{  width: 117px; height:143px;}
+  form > input{  width: 117px;}
+  
+
+}
+

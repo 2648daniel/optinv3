@@ -1,6 +1,6 @@
 $(function () {
-    //<button,div,etc class='optinv2' data-promo-id='1' data-device-id='2'></button>
-    var optinClassName = 'optinv2';
+    //<button,div,etc class='optinv3' data-promo-id='1' data-device-id='2'></button>
+    var optinClassName = 'optinv3';
     var loginButton = '';
     var storageKey = "optin_promos";
     var storage = new Storage;
@@ -95,7 +95,7 @@ $(function () {
             var selectThree = $("#three").val();
 
 
-            if (promoId != "" && deviceId != "") {
+            if (promoId != "" && deviceId != "" && selectOne != "" && selectTwo != "" && selectThree != "" ) {
                 loading();
 
                 var request = $.ajax({
@@ -103,7 +103,7 @@ $(function () {
                     type: "POST",
                     contentType: "application/json",
                     dataType: "json",
-                    data: { promoId: promoId, pfNumber: pfNum, deviceId: deviceId }
+                    data: { promoId: promoId, pfNumber: pfNum, deviceId: deviceId, selectOne: selectOne, selectTwo: selectTwo, selectThree: selectThree }
                 });
 
                 request.done(function (data) {
@@ -116,7 +116,6 @@ $(function () {
                 });
 
                 request.fail(function (jqXHR, exception) {
-                    alert("fail done");
                     displayMessage('There has been an error.  <br />Please try again or contact <br />our customer services department.');
                 });
 
