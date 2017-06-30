@@ -1,11 +1,11 @@
 <?php
 
     switch ($_SERVER['SERVER_NAME']) {
-        case "offer.betfred.com":
-            $dbHost = "petfre-mysqldb2.cenhgfamfqug.eu-west-1.rds.amazonaws.com";
-            $dbUsername = "offeruser";
-            //$dbPassword = "asaC8PeiyE";
-            $dbPassword = "QrhXu1gxnWi9";
+        case "live":
+            $dbHost = "";
+            $dbUsername = "";
+            //$dbPassword = "";
+            $dbPassword = "";
             $dbName = "optin_campaigns_test";
             break;
         case "localhost":
